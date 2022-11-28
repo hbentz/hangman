@@ -44,18 +44,10 @@ def contains_only_permissible_chars(word, permissible_chars):
     return True
 
 
-def get_unique_chars(word):
-    '''Returns a string with all the unique characters in a word'''
-    unique_letters = ""
-    for letter in word:
-        if letter not in unique_letters:
-            unique_letters += letter
-    return unique_letters
-
 def main():
     '''TODO: DOCSTRING'''
-    dict_in_name = "raw_dictionary.txt"
-    dict_out_name = "clean_dictionary.txt"
+    dict_in_name = "code/Dictionaries/raw_dictionary.txt"
+    dict_out_name = "code/Dictionaries/clean_dictionary.txt"
 
     # Require at least one vowel in a word for it to count and only allow ascii chars
     required_chars = 'aeiouy'
